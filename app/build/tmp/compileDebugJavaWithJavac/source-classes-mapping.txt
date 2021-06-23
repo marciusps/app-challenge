@@ -1,0 +1,2 @@
+com/example/kotlincsvfile/BuildConfig.java
+ com.example.kotlincsvfile.BuildConfig
