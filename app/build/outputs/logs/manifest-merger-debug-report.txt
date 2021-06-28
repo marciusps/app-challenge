@@ -90,14 +90,14 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Pr
 		ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:8:9-35
 	android:theme
 		ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:14:9-51
-activity#com.example.kotlincsvfile.HomeActivity
-ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:9-59
+activity#com.example.kotlincsvfile.activities.HomeActivity
+ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:9-70
 	android:name
-		ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:19-47
-activity#com.example.kotlincsvfile.MainActivity
+		ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:19-58
+activity#com.example.kotlincsvfile.activities.MainActivity
 ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:9-22:20
 	android:name
-		ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:19-47
+		ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:19-58
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
 ADDED from C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:17:13-21:29
 action#android.intent.action.MAIN

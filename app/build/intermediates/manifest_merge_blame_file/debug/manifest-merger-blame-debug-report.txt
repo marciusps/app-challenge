@@ -31,36 +31,35 @@
 20-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:12:9-54
 21        android:supportsRtl="true"
 21-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:13:9-35
-22        android:testOnly="true"
-23        android:theme="@style/Theme.KotlinCSVFile" >
-23-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:14:9-51
-24        <activity android:name="com.example.kotlincsvfile.HomeActivity" />
-24-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:9-59
-24-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:19-47
-25        <activity android:name="com.example.kotlincsvfile.MainActivity" >
-25-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:9-22:20
-25-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:19-47
-26            <intent-filter>
-26-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:17:13-21:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:18:17-69
-27-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:18:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:20:17-77
-29-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:20:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity
-32-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
-33            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
-33-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:13:13-86
-34            android:exported="false"
-34-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:14:13-37
-35            android:label=""
-35-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:15:13-29
-36            android:theme="@style/EasyPermissions.Transparent" />
-36-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:16:13-63
-37    </application>
-38
-39</manifest>
+22        android:theme="@style/Theme.KotlinCSVFile" >
+22-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:14:9-51
+23        <activity android:name="com.example.kotlincsvfile.activities.HomeActivity" />
+23-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:9-70
+23-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:15:19-58
+24        <activity android:name="com.example.kotlincsvfile.activities.MainActivity" >
+24-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:9-22:20
+24-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:16:19-58
+25            <intent-filter>
+25-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:17:13-21:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:18:17-69
+26-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:18:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:20:17-77
+28-->C:\Users\PremierSoft\AndroidStudioProjects\KotlinCSVFile\app\src\main\AndroidManifest.xml:20:27-74
+29            </intent-filter>
+30        </activity>
+31        <activity
+31-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:12:9-16:66
+32            android:name="pub.devrel.easypermissions.AppSettingsDialogHolderActivity"
+32-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:13:13-86
+33            android:exported="false"
+33-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:14:13-37
+34            android:label=""
+34-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:15:13-29
+35            android:theme="@style/EasyPermissions.Transparent" />
+35-->[pub.devrel:easypermissions:3.0.0] C:\Users\PremierSoft\.gradle\caches\transforms-2\files-2.1\de87c4b7e04fb48223d52245a689b142\easypermissions-3.0.0\AndroidManifest.xml:16:13-63
+36    </application>
+37
+38</manifest>

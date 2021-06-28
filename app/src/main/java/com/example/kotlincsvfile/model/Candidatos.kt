@@ -1,18 +1,19 @@
 package com.example.kotlincsvfile.model
 
 import com.example.kotlincsvfile.filtro.*
+import com.example.kotlincsvfile.utils.forEach
 import java.util.*
 import kotlin.collections.ArrayList
 import kotlin.collections.HashMap
 
 object Candidatos {
 
-    val lista: ArrayList<Candidato> = ArrayList()
+    val lista: MyArrayList<Candidato> = MyArrayList()
     val mapVaga: HashMap<String, Int> = HashMap()
     val mapEstado: HashMap<String, Int> = HashMap()
 
     fun getMapVaga() {
-        lista.forEach() {
+        lista.forEach {
             val vaga: String = it.vaga
             val total = mapVaga.get(vaga)
             if (total != null) {
@@ -23,7 +24,7 @@ object Candidatos {
     }
 
     fun getMapEstado() {
-        lista.forEach() {
+        lista.forEach {
             val estado: String = it.estado
             val total = mapEstado.get(estado)
             if (total != null) {
@@ -34,11 +35,11 @@ object Candidatos {
     }
 
     fun porcentagemVagas(): String {
-        val quantidade = lista.size
+        val quantidade = lista.size()
         var porcentagem: Float
         var texto = "Proporção dos candidatos por vaga: \n"
 
-        mapVaga.forEach() {
+        mapVaga.forEach {
             porcentagem = ((it.value * 100).toFloat() / quantidade)
             texto += (it.key.uppercase() + "      %.2f".format(porcentagem) + "%\n")
         }
@@ -48,7 +49,7 @@ object Candidatos {
     fun idadeMedia(): String {
         val vaga = "QA".lowercase()
         var total = 0.0
-        lista.forEach() {
+        lista.forEach {
             if (it.vaga.equals(vaga)) {
                 total += it.idade
             }
@@ -65,7 +66,7 @@ object Candidatos {
         val lista: ArrayList<Estado> = ArrayList()
         var estado: Estado
 
-        mapEstado.forEach() {
+        mapEstado.forEach {
             estado = Estado(it.key, it.value)
             lista.add(estado)
         }
@@ -77,38 +78,42 @@ object Candidatos {
     }
 
     fun listaOrdenada(): String {
-        Collections.sort(lista)
+        val arrayList: ArrayList<Candidato> = ArrayList()
+        lista.forEach {
+            arrayList.add(it)
+        }
+        Collections.sort(arrayList)
         return ("Gerando lista ordenada...")
     }
 
-    fun procuraInstrutorIOs(lista: ArrayList<Candidato>): Candidato? {
+    fun procuraInstrutorIOs(lista: MyArrayList<Candidato>): Candidato? {
         val filtroIdade = FiltroIdade(20, 31)
         val filtroIdadeImpar = FiltroIdadeImpar()
         val filtroPrimo = FiltroPrimo()
         val filtroSC = FiltroSC()
         val filtroPrimeiraLetraUltimoNome = FiltroPrimeiraLetraUltimoNome()
 
-        var filtro: ArrayList<Candidato> = filtroIdade.filtrar(lista)
+        var filtro: MyArrayList<Candidato> = filtroIdade.filtrar(lista)
 
         filtro = filtroIdadeImpar.filtrar(filtro)
         filtro = filtroSC.filtrar(filtro)
         filtro = filtroPrimo.filtrar(filtro)
         filtro = filtroPrimeiraLetraUltimoNome.filtrar(filtro)
-        return filtro.firstOrNull()
+        return filtro[0]
     }
 
-    fun procuraInstrutorAndroid(lista: ArrayList<Candidato>, decada: Int, idadeIos: Int): Candidato? {
+    fun procuraInstrutorAndroid(lista: MyArrayList<Candidato>, decada: Int, idadeIos: Int): Candidato? {
         val novoFiltroIdade = FiltroIdade(decada, idadeIos)
         val filtroVogais = FiltroVogais()
         val filtroUltimaLetraPrimeiroNome = FiltroUltimaLetraPrimeiroNome()
         val filtroIdadeImpar = FiltroIdadeImpar()
         val filtroSC = FiltroSC()
 
-        var novoFiltro: ArrayList<Candidato> = novoFiltroIdade.filtrar(lista)
+        var novoFiltro: MyArrayList<Candidato> = novoFiltroIdade.filtrar(lista)
         novoFiltro = filtroUltimaLetraPrimeiroNome.filtrar(novoFiltro)
         novoFiltro = filtroVogais.filtrar(novoFiltro)
         novoFiltro = filtroIdadeImpar.filtrar(novoFiltro)
         novoFiltro = filtroSC.filtrar(novoFiltro)
-        return novoFiltro.firstOrNull()
+        return novoFiltro[0]
     }
 }

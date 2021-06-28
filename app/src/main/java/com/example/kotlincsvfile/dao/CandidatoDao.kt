@@ -3,6 +3,8 @@ package com.example.kotlincsvfile.dao
 import android.content.Context
 import com.example.kotlincsvfile.model.Candidato
 import com.example.kotlincsvfile.model.Candidatos
+import com.example.kotlincsvfile.model.MyArrayList
+import com.example.kotlincsvfile.utils.forEach
 import java.io.*
 
 object CandidatoDao {
@@ -10,7 +12,7 @@ object CandidatoDao {
     lateinit var separador: String
     lateinit var saida: String
 
-    fun lerArquivo(context: Context): ArrayList<Candidato> {
+    fun lerArquivo(context: Context): MyArrayList<Candidato> {
         return Candidatos.lista.also {
             val streamReader = InputStreamReader(context.assets.open("AppAcademy_Candidates.csv"))
             val bufferedReader = BufferedReader(streamReader)
@@ -33,10 +35,10 @@ object CandidatoDao {
         }
     }
 
-    fun salvarArquivo(lista: ArrayList<Candidato>): String {
+    fun salvarArquivo(lista: MyArrayList<Candidato>): String {
         File(caminho + saida).bufferedWriter().use { out ->
             out.write("Nome;Vaga;Idade;Estado\n")
-            lista.forEach() {
+            lista.forEach {
                 out.write(it.nome + separador + it.vaga + separador + it.idade + separador + it.estado + "\n")
             }
         }

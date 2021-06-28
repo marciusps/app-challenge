@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\PremierSoft\\AndroidStudioProjects\\KotlinCSVFile\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_bg.xml.flat",
-        "source": "C:\\Users\\PremierSoft\\AndroidStudioProjects\\KotlinCSVFile\\app\\src\\main\\res\\drawable\\rounded_bg.xml"
-    },
-    {
         "merged": "C:\\Users\\PremierSoft\\AndroidStudioProjects\\KotlinCSVFile\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_home.xml.flat",
         "source": "C:\\Users\\PremierSoft\\AndroidStudioProjects\\KotlinCSVFile\\app\\src\\main\\res\\layout\\activity_home.xml"
     },

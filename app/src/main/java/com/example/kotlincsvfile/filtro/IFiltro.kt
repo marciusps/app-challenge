@@ -1,7 +1,8 @@
 package com.example.kotlincsvfile.filtro
 
 import com.example.kotlincsvfile.model.Candidato
+import com.example.kotlincsvfile.model.MyArrayList
 
 interface IFiltro {
-    fun filtrar(lista :ArrayList<Candidato>) :ArrayList<Candidato>
+    fun filtrar(lista : MyArrayList<Candidato>) :MyArrayList<Candidato>
 }
